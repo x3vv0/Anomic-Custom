@@ -255,6 +255,10 @@ function setTheme()
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.ImageLabel.BackgroundColor3 = colors.black
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.ImageLabel.ImageColor3 = colors.black
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.ImageLabel.ImageTransparency = 0.5
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BackgroundColor3 = colors.grey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BorderColor3 = colors.white
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BackgroundColor3 = colors.grey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BorderColor3 = colors.white
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.Description.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.Description.BackgroundColor3 = colors.lightGrey
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.BackgroundColor3 = colors.grey
