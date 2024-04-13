@@ -667,16 +667,16 @@ ASection22:addButton("Remove Flash / Smoke | FE", function()
     end
 end)
 
-PlrSection:addSlider("Player Fov", 50, 0, 120, function(valuex)
+PlrSection:addSlider("PLAYER FOV", 50, 0, 120, function(valuex)
     camera.FieldOfView = valuex
 end)
-PlrSection:addDropdown("Infinite Jump Mode", {"Fly", "Infinite", }, function(x)
+PlrSection:addDropdown("INFINITE JUMP MODE", {"Fly", "Infinite", }, function(x)
     jumpMode = x
 end)
-PlrSection:addToggle("Infinite Jump", nil, function(v)
+PlrSection:addToggle("INFINITE JUMP", nil, function(v)
     infiniteJump = v
 end)   
-PlrSection:addToggle("Noclip", nil, function(v)
+PlrSection:addToggle("NOCLIPPING", nil, function(v)
     if v then
         Noclipping = game:GetService('RunService').Stepped:Connect(noclip)
     else
@@ -696,7 +696,7 @@ repeat wait() until LPlayer.Character.HumanoidRootPart.Anchored == false
     end 
 end
 
-PlrSection:addToggle("Infinite Stamina", nil, function(v)
+PlrSection:addToggle("INFINITE STAMINA", nil, function(v)
     infiniteStamina = v    
     disableStam(v)
 end)
@@ -706,7 +706,7 @@ game.Players.LocalPlayer.CharacterAdded:Connect(function()
         disableStam(infiniteStamina)    
     end
 end)
-PlrSection:addToggle("Air Swim", nil, function(v)
+PlrSection:addToggle("AIR SWIM", nil, function(v)
     for i, v in next, getconnections(game:GetService("Workspace"):GetPropertyChangedSignal("Gravity")) do
         v:Disable()
     end
@@ -755,15 +755,15 @@ PlrSection:addToggle("Air Swim", nil, function(v)
         LPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.RunningNoPhysics)
     end
 end)
-PlrSection:addToggle("Anti Car", nil, function(v)    
+PlrSection:addToggle("ANTI CAR", nil, function(v)    
     antiCar = v
 end)
-PlrSection:addToggle("Speed Bypass - (Dont walk into sharp terrain)", nil, function(v)    
+PlrSection:addToggle("ANTI CHEAT / Speed Bypass - (Dont walk into sharp terrain)", nil, function(v)    
     speedBypass = v
 end)
 
 local flying = false
-PlrSection:addKeybind("Flight KeyBind", nil, function()        
+PlrSection:addKeybind("FLIGHT KEYBIND", nil, function()        
     flying = not flying
     if flying then
         startFly()                    
@@ -1332,16 +1332,6 @@ wepSection:addToggle("Backpack Pass", nil, function(state)
 end)]]
 miscSection:addButton("Rejoin", function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
-end)
-miscSection:addButton("No void", function()
-   game:GetService("Workspace").FallenPartsDestroyHeight = math.huge - math.huge
-end)
-miscSection:addButton("Reset cash to 50k", function()
-    for i,v in pairs(workspace.PlayerVehicles:GetChildren()) do
-        game:GetService("ReplicatedStorage")["_CS.Events"].FillUpCar:FireServer(v, 9e9)
-    end
-    wait(.2)
-    game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
 CarSection:addToggle("Max Speed", nil, function(state)
     ccar = getCurrentVehicle()  
