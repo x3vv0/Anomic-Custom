@@ -252,6 +252,9 @@ function setTheme()
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.BorderColor3 = colors.white
 
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.ScrollingFrame.ReloadButton.BackgroundColor3 = colors.grey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.ScrollingFrame.ReloadButton.BorderColor3 = colors.white
+
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BorderColor3 = colors.white  
