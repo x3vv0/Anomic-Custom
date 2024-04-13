@@ -1890,8 +1890,8 @@ game:GetService("RunService").RenderStepped:connect(function()
     end    
 end)
 
-notify("Anomic V", "Scripts made by H3LLL0 and Krypton - Forum name: F A Z E D")
-notify("Anomic V", "Info can be found in discord")
+notify("Anomic V", "Script made by x3vv0 & ST4 / Custom")
+notify("Anomic V", "This will make anomic better!")
 
 wait(.3)
 
