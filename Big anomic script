@@ -1895,6 +1895,7 @@ game:GetService("RunService").RenderStepped:connect(function()
 end)
 
 notify("Anomic V", Script made by x3vv0 & ST4 / Customs.")
+notify("Anomic V", Can be found on discord.")
 
 wait(.3)
 
