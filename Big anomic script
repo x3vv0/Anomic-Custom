@@ -1,6 +1,6 @@
 --// Anomic Script, old and buggy could use a rewrite entirely i admit.
 
-local mainName = "Anomic V | 2.8.5" 
+local mainName = "Anomic V | 2.8.5 / Custom made by x3vv0" 
 if game:GetService("CoreGui"):FindFirstChild(mainName) then
     game.CoreGui[mainName]:Destroy()
 end
@@ -969,7 +969,7 @@ end)
 wrldSection:addColorPicker("Ambient", Color3.fromRGB(150, 140, 140), function(s)    
     wLighting.Ambient = s    
 end)
-MiscEsp:addButton("Printer ESP", function()
+MiscEsp:addButton("Simple Printer ESP", function()
     for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do
         if v:IsA("Model") and v.Name == "Simple Printer" then
             local a = Instance.new("BoxHandleAdornment")
@@ -998,8 +998,17 @@ for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do
         TextLabel.BackgroundTransparency = 1
         TextLabel.TextColor3 = Color3.new(1, 0.501961, 0)
         TextLabel.TextScaled = true
+
+            local a = Instance.new("BoxHandleAdornment")
+            a.Name = v.Name:lower().."_alwayswinAV"
+            a.Parent = v.hitbox
+            a.Adornee = v
+            a.AlwaysOnTop = true
+            a.ZIndex = 0
+            a.Transparency = 0.3
+            a.Color = BrickColor.new("Neon Orange")
     end
-end
+  end
 end)
 
 local targetName = nil;
