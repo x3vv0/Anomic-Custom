@@ -259,6 +259,10 @@ function setTheme()
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BorderColor3 = colors.white
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BorderColor3 = colors.white
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.ReloadButton.TextColor3 = colors.white
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.ReloadButton.BackgroundColor3 = colors.grey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.ReloadButton.BorderColor3 = colors.lightGrey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.ReloadButton.Text = "Reload Event Items"
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.Description.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.Description.BackgroundColor3 = colors.lightGrey
            LPlayer.PlayerGui.MainUIHolder.Menus.TeamGUI.ShopF.BackgroundColor3 = colors.grey
