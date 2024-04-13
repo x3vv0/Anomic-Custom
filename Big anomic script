@@ -251,6 +251,9 @@ function setTheme()
        if LPlayer.PlayerGui.MainUIHolder:FindFirstChild("Menus") and LPlayer ~= nil then
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Basic.BorderColor3 = colors.white
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BackgroundColor3 = colors.grey
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.BorderColor3 = colors.white
+           LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.Perm.ScrollingFrame.BackgroundColor3 = colors.grey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.BorderColor3 = colors.lightGrey
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.ImageLabel.BackgroundColor3 = colors.black
            LPlayer.PlayerGui.MainUIHolder.Menus.BackpackGUI.ImageLabel.ImageColor3 = colors.black
