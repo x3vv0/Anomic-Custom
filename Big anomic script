@@ -995,18 +995,6 @@ end)
 MiscEsp:addButton("Hotwired Printer ESP", function()
 for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do
     if v:IsA("Model") and v.Name == "Hotwired Printer" then
-        local BillBoardUI = Instance.new("BillboardGui")
-        local TextLabel = Instance.new("TextLabel")
-        BillBoardUI.Parent = v.Handle
-        TextLabel.Parent = BillBoardUI
-        TextLabel.Position = UDim2.new(0, 0,0, -75)
-        TextLabel.Size = UDim2.new(0, 70,0, 70)
-        BillBoardUI.Size = UDim2.new(0, 70,0, 70)
-        TextLabel.Text = v.Name
-        TextLabel.BackgroundTransparency = 1
-        TextLabel.TextColor3 = Color3.new(1, 0.501961, 0)
-        TextLabel.TextScaled = true
-
             local a = Instance.new("BoxHandleAdornment")
             a.Name = v.Name:lower().."_alwayswinAV"
             a.Parent = v.hitbox
