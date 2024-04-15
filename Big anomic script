@@ -1092,23 +1092,6 @@ PlrTarget:addButton("View Previous Player", function()
         end
     end
 end)
-PlrTarget:addButton("Teleport To Spectated", function()
-    if plrNum ~= 1 then
-        for i,v in pairs(game.Players:GetPlayers()) do
-            if i == plrNum then
-                LPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
-                if plrNum ~= 1 then
-                    plrNum = 1
-                end
-                for i,v in pairs(game.Players:GetPlayers()) do
-                    if i == plrNum then
-                        game.Workspace.Camera.CameraSubject = v.Character.Humanoid
-                    end
-                end
-            end
-        end
-    end
-end)
 
 local donateAmount = 10
 DonateSection:addTextbox("Donate Amount Value", "0", function(v)
