@@ -1012,14 +1012,7 @@ local plrNum = 1
 specificSection:addTextbox("Target Name", "Default", function(plr)    
     targetName = plr
 end)
-specificSection:addButton("Teleport to target", function()
-    for i,v in pairs(game:service'Players':GetPlayers()) do
-        if v.Name:match(targetName) then
-            LPlayer.Character.HumanoidRootPart.CFrame = v.Character.HumanoidRootPart.CFrame * CFrame.new(0,2,0)
-            workspace.Camera.CameraSubject = LPlayer.Character.Humanoid
-        end
-    end
-end)
+
 specificSection:addButton("View target", function()
     for i,v in pairs(game:service'Players':GetPlayers()) do
         if v.Name:match(targetName) then
