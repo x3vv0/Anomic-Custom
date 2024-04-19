@@ -1003,6 +1003,19 @@ for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do
             a.ZIndex = 0
             a.Transparency = 0.3
             a.Color = BrickColor.new("Rust")
+
+        local billboard = Instance.new("BillboardGui")
+        local text = Instance.new("TextLabel")
+        billboard.Name = "ESP"
+        billboard.Parent = v.Handle
+        text.Parent = billboard
+        text.Font = Enum.Font.ArialBold
+        billboard.Size = UDim2.new(0, 200,0, 50)
+        text.Size = UDim2.new(0, 100,0, 25)
+        text.TextColor3 = Color3.fromRGB(170, 85, 0)
+        text.TextSize = 15
+        text.BackgroundTransparency = 1
+        text.Text = "Hotwired Printer"
     end
   end
 end)
