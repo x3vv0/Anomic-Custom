@@ -1284,7 +1284,7 @@ end)
     LPlayer.Character.HumanoidRootPart.CFrame = old
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
-ToolGrabber:addToggle("Tool Sniper", nil, function(state)
+ToolGrabber:addButton("Tool Sniper", nil, function(state)
     if state then  
         local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame         
         for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do            
