@@ -1,6 +1,5 @@
---// Anomic Script, old and buggy could use a rewrite entirely i admit.
 
-local mainName = "Anomic V | 2.8.5 / Custom made by x3vv0" 
+local mainName = "Anomic V | 1.0.1 / Custom made by x3vv0" 
 if game:GetService("CoreGui"):FindFirstChild(mainName) then
     game.CoreGui[mainName]:Destroy()
 end
@@ -20,7 +19,7 @@ local tele = Main:addPage("Teleportation", 6031280883)
 local Buy = Main:addPage("Guns", 6034509993)
 local misc = Main:addPage("Miscellaneous", 6034509993)
 local Ui = Main:addPage("Settings", 6022860343)
-local ToolGrabber = Main:addPage("Tool Grabber", 6022860343)
+local wepSection = Main:addPage("Tool Grabber", 6022860343)
 
 -- // Sections
 -- // Combat Section
@@ -67,6 +66,9 @@ local boomSection = misc:addSection("Boombox Player (Hold Boombox)")
 -- // UI Section
 local ThemeSection = Ui:addSection("Theme")
 local UISection = Ui:addSection("UI")
+
+-- // Tool Grabber Section
+local WepGrabSection = wepSection:addSection("Tool Grabber")
 
 -- // Credits Section
 local creds = Ui:addSection("Developers: H3#3534, Krypton#3195.")
@@ -1284,7 +1286,7 @@ end)
     LPlayer.Character.HumanoidRootPart.CFrame = old
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
-ToolGrabber:addButton("Tool Sniper", nil, function(state)
+WepGrabSection:addToggle("Tool Sniper", nil, function(state)
     if state then  
         local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame         
         for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do            
@@ -1294,10 +1296,10 @@ ToolGrabber:addButton("Tool Sniper", nil, function(state)
         end
     end    
 end)
-ToolGrabber:addToggle("Auto Store items", nil, function(state)
+WepGrabSection:addToggle("Auto Store items", nil, function(state)
     autoStore = state
 end)
-ToolGrabber:addToggle("Backpack Pass", nil, function(state)
+WepGrabSection:addToggle("Backpack Pass", nil, function(state)
    LPlayer.PlayerScripts.OwnsBackpackPass.Value = state
 end)]]
 miscSection:addButton("Rejoin", function()
