@@ -1284,7 +1284,7 @@ end)
     LPlayer.Character.HumanoidRootPart.CFrame = old
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
-wepSection:addToggle("Tool Sniper", nil, function(state)
+ToolGrabber:addToggle("Tool Sniper", nil, function(state)
     if state then  
         local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame         
         for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do            
@@ -1294,10 +1294,10 @@ wepSection:addToggle("Tool Sniper", nil, function(state)
         end
     end    
 end)
-wepSection:addToggle("Auto Store items", nil, function(state)
+ToolGrabber:addToggle("Auto Store items", nil, function(state)
     autoStore = state
 end)
-wepSection:addToggle("Backpack Pass", nil, function(state)
+ToolGrabber:addToggle("Backpack Pass", nil, function(state)
    LPlayer.PlayerScripts.OwnsBackpackPass.Value = state
 end)]]
 miscSection:addButton("Rejoin", function()
