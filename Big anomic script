@@ -1143,7 +1143,7 @@ teleSection2:addButton("Arway", function()
 if getCurrentVehicle() ~= nil then
     getCurrentVehicle():SetPrimaryPartCFrame(CFrame.new(1861.14111, -65.5734253, -1310.6853, 0.998740196, 0, -0.0501802117, 0, 1, 0, 0.0501802117, 0, 0.998740196) * CFrame.new(0,5,0))
 else 
-LPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1861.14111, -65.5734253, -1310.6853, 0.998740196, 0, -0.0501802117, 0, 1, 0, 0.0501802117, 0, 0.998740196)end end)
+LPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1857.16113, -67.3234482, -1213.72192, -0.993009508, 3.75355782e-08, 0.118034326, 3.93221384e-08, 1, 1.28071012e-08, -0.118034326, 1.73589356e-08, -0.993009508)end end)
 teleSection2:addButton("Pahrump", function()
 if getCurrentVehicle() ~= nil then
     getCurrentVehicle():SetPrimaryPartCFrame(CFrame.new(-73.3169708, 9.45411873, 40.8025475, 0.0519082919, 0, -0.998651743, 0, 1, 0, 0.998651743, 0, 0.0519082919) * CFrame.new(0,5,0))
@@ -1197,6 +1197,11 @@ LPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2945.89185, -137.832367, 
 teleSection3:addButton("Safe Spot 3", function()
 if getCurrentVehicle() ~= nil then
     getCurrentVehicle():SetPrimaryPartCFrame(CFrame.new(1370.47009, 71.7390747, 1057.67322, -0.805606365, 3.60798893e-08, -0.592451155, 9.24334884e-08, 1, -6.47903775e-08, 0.592451155, -1.06957877e-07, -0.805606365) * CFrame.new(0,5,0))
+else
+LPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1370.47009, 71.7390747, 1057.67322, -0.805606365, 3.60798893e-08, -0.592451155, 9.24334884e-08, 1, -6.47903775e-08, 0.592451155, -1.06957877e-07, -0.805606365)end end)
+teleSection3:addButton("Safe Spot 4", function()
+if getCurrentVehicle() ~= nil then
+    getCurrentVehicle():SetPrimaryPartCFrame(CFrame.new(956.707458, -38.7140617, -149.479584, 0.67964679, 3.77448783e-09, 0.733539522, -1.35269076e-08, 1, 7.38751149e-09, -0.733539522, -1.49434207e-08, 0.67964679) * CFrame.new(0,5,0))
 else
 LPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1370.47009, 71.7390747, 1057.67322, -0.805606365, 3.60798893e-08, -0.592451155, 9.24334884e-08, 1, -6.47903775e-08, 0.592451155, -1.06957877e-07, -0.805606365)end end)
 teleSection4:addButton("Player lobby", function()
