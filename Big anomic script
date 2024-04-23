@@ -1305,6 +1305,12 @@ end)]]
 miscSection:addButton("Rejoin", function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
+miscSection:addButton("Spawn Simple Printer", function()
+    game:GetService("ReplicatedStorage")["_CS.Events"].PurchaseTeamItem:FireServer("Simple Printer","Single",Color3.new(0, 0, 0))
+end)
+miscSection:addButton("Spawn Hotwired Printer", function()
+    game:GetService("ReplicatedStorage")["_CS.Events"].PurchaseTeamItem:FireServer("Hotwired Printer","Single",Color3.new(0, 0, 0))
+end)
 CarSection:addToggle("Max Speed", nil, function(state)
     ccar = getCurrentVehicle()  
     if state then
