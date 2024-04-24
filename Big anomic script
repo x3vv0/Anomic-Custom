@@ -1270,9 +1270,6 @@ BuySectionMisc2:addToggle("Kit Spammer (Requires right role)", nil, function(sta
     kitSpammerEnabled = state
 end)
 
-
-
-
 --[[function getTool(t,old)                  
     LPlayer.Character.HumanoidRootPart.CFrame = t.Handle.CFrame * CFrame.new(0,1,0)                  
     game:GetService("ReplicatedStorage"):FindFirstChild("_CS.Events").Dropper:FireServer(t,"PickUp")                   
@@ -1286,6 +1283,7 @@ end)
     LPlayer.Character.HumanoidRootPart.CFrame = old
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
+
 WepGrabSection:addToggle("Tool Sniper", nil, function(state)
     if state then  
         local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame         
