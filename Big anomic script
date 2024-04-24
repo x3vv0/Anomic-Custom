@@ -1273,7 +1273,7 @@ end)
 
 
 
-[[function getTool(t,old)                  
+--[[function getTool(t,old)                  
     LPlayer.Character.HumanoidRootPart.CFrame = t.Handle.CFrame * CFrame.new(0,1,0)                  
     game:GetService("ReplicatedStorage"):FindFirstChild("_CS.Events").Dropper:FireServer(t,"PickUp")                   
     wait()   
