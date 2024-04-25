@@ -3,6 +3,9 @@ local mainName = "Anomic V | 1.0.1 / Custom made by x3vv0"
 
 
 print("Loading | LIB") 
+if game:GetService("CoreGui"):FindFirstChild(mainName) then
+    game.CoreGui[mainName]:Destroy()
+end
 
 -- Library
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/Roblox-scripts-2.0/main/UIS/venyxUI-mod.lua"))()
