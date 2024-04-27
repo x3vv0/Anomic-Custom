@@ -8,7 +8,7 @@ if game:GetService("CoreGui"):FindFirstChild(mainName) then
 end
 
 -- Library
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/Roblox-scripts-2.0/main/UIS/venyxUI-mod.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/HELLLO1073/Anomiss/main/Global/AnomissLiteLib.lua"))()
 local Main = library.new(mainName)
 
 -- // Tabs
