@@ -1284,15 +1284,25 @@ end)
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
 
-WepGrabSection:addToggle("Tool Sniper")
-
+miscSection:addToggle("Tool Sniper", nil, function(state)
+    if state then
+        local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame
+        for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do
+            if v:IsA("Model") and v.Name == "ToolModel" and LPlayer.Character and v.Handle and not v:FindFirstChild("PlayerWhoDropped") then
+                getTool(v,oldCFrame)
+            end
+        end
+    end
 end)
-WepGrabSection:addToggle("Auto Store items", nil, function(state)
+
+miscSection:addToggle("Auto Store items", nil, function(state)
     autoStore = state
 end)
-WepGrabSection:addToggle("Backpack Pass", nil, function(state)
+
+miscSection:addToggle("Backpack Pass", nil, function(state)
    LPlayer.PlayerScripts.OwnsBackpackPass.Value = state
 end)]]
+
 miscSection:addButton("Rejoin", function()
     game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
 end)
