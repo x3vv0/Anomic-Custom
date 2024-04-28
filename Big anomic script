@@ -1284,15 +1284,8 @@ end)
     LPlayer.Character.HumanoidRootPart.Anchored = false
 end
 
-WepGrabSection:addToggle("Tool Sniper", nil, function(state)
-    if state then  
-        local oldCFrame = LPlayer.Character.HumanoidRootPart.CFrame         
-        for i,v in pairs(game:GetService("Workspace").Entities:GetChildren()) do            
-            if v:IsA("Model") and v.Name == "ToolModel" and LPlayer.Character and v.Handle and not v:FindFirstChild("PlayerWhoDropped") then
-                getTool(v,oldCFrame)                                
-            end
-        end
-    end    
+WepGrabSection:addToggle("Tool Sniper")
+
 end)
 WepGrabSection:addToggle("Auto Store items", nil, function(state)
     autoStore = state
