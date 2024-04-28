@@ -1,6 +1,5 @@
 
 local mainName = "Anomic V | 1.0.1 | Custom made by x3vv0" 
-
 print("Loading | LIB") 
 if game:GetService("CoreGui"):FindFirstChild(mainName) then
     game.CoreGui[mainName]:Destroy()
